@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-mongoose.connect(mongodb://blipco:dabomb@ds259820.mlab.com:59820/heroku_9gnrqds8);
+mongoose.connect('process.env.MONGODB_URI');
 
 mongoose.Promise = Promise;
 
